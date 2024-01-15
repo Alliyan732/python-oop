@@ -1,0 +1,11 @@
+Why OOP:
+1) Every real world entity is an object, so we can solve real world problems by taking real world entities as objects in OOP.
+2) Security
+
+Objects: 
+    Objects have 'data' and 'methods'
+
+Class:
+    we group similar kind of objects in a Class, It acts as a blueprint or a template for the object.
+    we create blueprint once and then can create multiple objects according that class 
+

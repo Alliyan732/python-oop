@@ -2,7 +2,7 @@ class Person:
 
     # constructor in a class gets automatically called when we create an object of the class
     
-    # default constructor , if the constructor does not take arguments, the we call it default constructor
+    # default constructor , if the constructor does not take arguments, then we call it default constructor
     # def __init__(self): 
     #     print("This is default constructor")
 
