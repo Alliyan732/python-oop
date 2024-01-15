@@ -9,3 +9,25 @@ Class:
     we group similar kind of objects in a Class, It acts as a blueprint or a template for the object.
     we create blueprint once and then can create multiple objects according that class 
 
+Constructor:
+    It is a special method within a class that get automatically called when a object is created.
+    Tt is used to initialize the attributes of the objects.
+    It is written with __init__
+
+dunder: 
+    def __init__(self)
+
+default constructor: 
+    The default constructor is a simple constructor which doesn't accept any arguments. 
+Its definition has only one argument which is a reference to the instance being constructed.
+
+parameterized constructor: 
+    constructor with parameters is known as parameterized constructor.
+
+
+Inheritance: (avoids duplicasy)
+    Parent / SuperClass has it's own properties and methods,
+    Child / SubClass has it's own properties and methods but in addition it inherits properties of parent class.
+    super().__init__(parameters)
+
+
