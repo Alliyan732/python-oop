@@ -8,7 +8,31 @@
 # then we need to override the method for circle class , we all know the formula of 
 # circle i.e Pi*r^2
 
+"""
+Function Overriding:
+    -> Function overriding occurs when a subclass provides a specific implementation for a method that is already defined 
+       in its superclass.
+    -> The overridden method in the subclass must have the same method signature (name and parameters) as the method in 
+       the superclass.
+"""
 
+# Example 1 
+class Shape:
+    def area(self):
+        return 0
+
+class Square(Shape):
+    def __init__(self, side_length):
+        self.side_length = side_length
+
+    def area(self):
+        return self.side_length ** 2
+
+square = Square(4)
+print('\nFunction Overriding Exampe 1')
+print(square.area())  # Output: 16
+
+# Example 1 
 class Shape:
     def __init__(self, l, w):
 
@@ -29,7 +53,7 @@ class Circle(Shape):
         return 3.14 * super().calcArea()
         
 
-
+print('\nFunction Overriding Exampe 2')
 obj = Shape(3, 5)
 print("Area of Rectangle: ", obj.calcArea())
 
