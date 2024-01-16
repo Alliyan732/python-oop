@@ -1,13 +1,3 @@
-# method overriding in inheritance 
-# It's a way to change the method in child class,  got from the parent class
-# So the question is , why we Override method? 
-# It's because we need to override method sometimes in realworld snarios,
-# let's take a simple example that we have a parent class Shape, which has a function calc_area
-# that takes 2 arguments length and width , and return the result as L*W for the area, 
-# it's fine for the squares and rectangles , but waht if we have a child class circle?
-# then we need to override the method for circle class , we all know the formula of 
-# circle i.e Pi*r^2
-
 """
 Function Overriding:
     -> Function overriding occurs when a subclass provides a specific implementation for a method that is already defined 
@@ -32,7 +22,18 @@ square = Square(4)
 print('\nFunction Overriding Exampe 1')
 print(square.area())  # Output: 16
 
-# Example 1 
+
+# method overriding in inheritance 
+# It's a way to change the method in child class,  got from the parent class
+# So the question is , why we Override method? 
+# It's because we need to override method sometimes in realworld snarios,
+# let's take a simple example that we have a parent class Shape, which has a function calc_area
+# that takes 2 arguments length and width , and return the result as L*W for the area, 
+# it's fine for the squares and rectangles , but waht if we have a child class circle?
+# then we need to override the method for circle class , we all know the formula of 
+# circle i.e Pi*r^2
+
+# Example 2
 class Shape:
     def __init__(self, l, w):
 
