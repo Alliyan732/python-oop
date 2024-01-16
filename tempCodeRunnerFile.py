@@ -1,2 +1,0 @@
-class Cycle(Vehicle):
-#     pass

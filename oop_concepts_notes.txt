@@ -1,0 +1,149 @@
+Why OOP:
+1) Every real world entity is an object, so we can solve real world problems by taking real world entities as objects in OOP.
+2) Security
+
+Objects: 
+    Objects have 'data' and 'methods'
+
+Class:
+    we group similar kind of objects in a Class, It acts as a blueprint or a template for the object.
+    we create blueprint once and then can create multiple objects according that class 
+
+Constructor:
+    It is a special method within a class that get automatically called when a object is created.
+    Tt is used to initialize the attributes of the objects.
+    It is written with __init__
+
+dunder: 
+    def __init__(self)
+
+default constructor: 
+    The default constructor is a simple constructor which doesn't accept any arguments. 
+    Its definition has only one argument which is a reference to the instance being constructed.
+
+parameterized constructor: 
+    constructor with parameters is known as parameterized constructor.
+
+
+Inheritance: (avoids duplicasy)
+    Parent / SuperClass has it's own properties and methods,
+    Child / SubClass has it's own properties and methods but in addition it inherits properties of parent class.
+    super().__init__(parameters)
+
+
+Encapsulation:
+    
+    Encapsulation is one of the four fundamental principles of object-oriented programming (OOP) and involves bundling
+    the data (attributes) and methods that operate on the data into a single unit known as a class. The idea is to hide
+    the internal state of an object and restrict access to its implementation details. This helps in organizing and 
+    managing code, as well as providing a level of security by controlling access to the internal data.
+
+    In Python, encapsulation is achieved by using private and protected access modifiers.
+
+    Access Modifiers:
+
+    1. Public (default):
+        Members declared as public are accessible from outside the class.
+        In Python, all members of a class are public by default.
+
+    2. Protected (_ prefix):
+        Members declared as protected are accessible within the class and its subclasses.
+        Conventionally, a single leading underscore is added to the name to indicate that 
+        it should be treated as protected.
+
+    3. Private (__ prefix):
+        Members declared as private are accessible only within the class itself.
+        A double leading underscore is added to the name to make it private.
+
+
+Decorator:
+
+    In Python, a decorator is a special type of function that is used to modify  
+    the behavior of another function or method. Decorators are often used to wrap or
+    extend the functionality of functions without modifying their code directly. 
+    Decorators are applied using the @decorator syntax above the function definition.
+
+
+Polymorphism:
+
+    --> Same function name (but different signatures) being uses for different types
+                                    (or)
+    --> Polymorphism is the ability of a single function or method to work in different 
+        ways based on the context or the types of objects it operates on.
+
+    -> It allows flexibility and code reuse
+
+    -> For Example: A function calculating the length , If there is list it will return 
+       length of the list, if there is string, it will return length of the string.
+
+    It includes:
+
+    1) Function Overloading:
+        -> Function overloading allows a class to define multiple methods withthe same name but with a different number or
+           type of parameters.
+        -> However, Python doesn't support traditional function overloading (as in some other languages like C++ or Java).
+           In Python, you can achieve similar functionality using default parameter values or variable-length argument lists.
+
+    2) Function Overriding:
+        -> Function overriding occurs when a subclass provides a specific implementation for a method that is already defined 
+           in its superclass.
+        -> The overridden method in the subclass must have the same method signature (name and parameters) as the method in 
+           the superclass.
+
+
+Abstraction: 
+
+    Abstraction is one of the key principles of object-oriented programming (OOP) and refers to 
+    the concept of hiding the complex implementation details while exposing only the necessary 
+    functionalities or interfaces. It allows you to focus on what an object does rather than how
+    it achieves its functionality. In Python, abstraction is achieved through abstract classes 
+    and interfaces.
+
+
+    Abstract class: 
+        -> A class which contain one or more abstract methods.
+        -> Prevents the user to create an object of that class.
+        -> Compels a user to override the abstract methods in a child class.
+           child classes cannot miss the methods defined in abstract class.
+
+    Abstract method:
+        -> A method that has a declaration but does not have an implementation.
+        -> Abstract methods are declared without providing any implementation in the abstract 
+           class, and they must be implemented by concrete (non-abstract) subclasses.
+
+
+Association:
+
+    Association is a fundamental concept in object-oriented programming (OOP) that describes a 
+    relationship between two or more classes. It represents how objects from different classes
+    interact with each other. 
+
+    Usage: 
+        -> In some cases we can't use inheritance 
+        -> for example we have salary and employee class, salary class contains the info about 
+           the annual salary of employees. Can we apply "Inheritance" here?
+           the answer is "No" because there is no inheritance relation here, salary is not the
+           employee and employee is not the salary.
+
+    
+
+    There are several types of associations, including:
+
+    1) Composition:
+
+        -> Composition is a type os association where the contained class is part of the whole
+           and cannot exist independently.
+        -> In composition , we deligate some responsiblity from one class to another class
+        -> It represents a "part-of" relationship.
+
+        General Example:
+            1) Suppose a house, compose of kitchen and bedrooms, here this type of association is
+               composition because if the house burns down or collapses, kitchen and bedrooms will
+               also burn. So the classes cannot exist independently.
+            2) And if there will be a Chapter class, related to a Book, that would be composition.
+
+    2) Aggregation:
+
+        -> Aggregation is a specific type of association where one class contains another class, 
+           but the contained class can exist independently.
+        -> It represents a "has-a" relationship.

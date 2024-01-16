@@ -1,18 +1,26 @@
 """ 
-Access Modifiers
+Encapsulation:
+    Encapsulation is one of the four fundamental principles of object-oriented programming (OOP) and involves bundling
+    the data (attributes) and methods that operate on the data into a single unit known as a class. The idea is to hide
+    the internal state of an object and restrict access to its implementation details. This helps in organizing and 
+    managing code, as well as providing a level of security by controlling access to the internal data.
 
-1. Public (default):
-Members declared as public are accessible from outside the class.
-In Python, all members of a class are public by default.
+    In Python, encapsulation is achieved by using private and protected access modifiers.
 
-2. Protected (_ prefix):
-Members declared as protected are accessible within the class and its subclasses.
-Conventionally, a single leading underscore is added to the name to indicate that 
-it should be treated as protected.
+    Access Modifiers:
 
-3. Private (__ prefix):
-Members declared as private are accessible only within the class itself.
-A double leading underscore is added to the name to make it private.
+    1. Public (default):
+        Members declared as public are accessible from outside the class.
+        In Python, all members of a class are public by default.
+
+    2. Protected (_ prefix):
+        Members declared as protected are accessible within the class and its subclasses.
+        Conventionally, a single leading underscore is added to the name to indicate that 
+        it should be treated as protected.
+
+    3. Private (__ prefix):
+        Members declared as private are accessible only within the class itself.
+        A double leading underscore is added to the name to make it private.
 
 """
 
