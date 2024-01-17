@@ -1,7 +1,26 @@
 
 """
+In object-oriented programming (OOP), inheritance is a mechanism that allows a new class (subclass or derived class)
+to inherit properties and behaviors from an existing class (superclass or base class). This promotes code reuse and
+establishes a relationship between the classes. The subclass can reuse and extend the functionality of the superclass,
+leading to a hierarchical structure.
+
+Here are some key concepts related to inheritance:
+
+Base Class (Superclass): The class whose properties and behaviors are inherited is called the base class or superclass.
+ It serves as a template for other classes.
+
+Derived Class (Subclass): The class that inherits from another class is called the derived class or subclass. It can 
+have its own additional properties and behaviors while also inheriting from the base class.
+
+"is-a" Relationship: Inheritance models the "is-a" relationship. If Class B inherits from Class A, we say that "B is 
+a subclass of A" or "B is derived from A." This implies that objects of B can be treated as objects of A.
+
+Access to Superclass Members: A subclass inherits attributes and methods of the superclass, and it can also have its 
+own attributes and methods. The subclass can access the public and protected members of the superclass.
 
 """
+
 # class Animal:
 #     def __init__(self, name):
 #         self.name = name
