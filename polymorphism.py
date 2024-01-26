@@ -13,7 +13,7 @@ Polymorphism:
 It includes:
 
     1) Function Overloading:
-        -> Function overloading allows a class to define multiple methods withthe same name but with a different number or
+        -> Function overloading allows a class to define multiple methods with the same name but with a different number or
            type of parameters.
         -> However, Python doesn't support traditional function overloading (as in some other languages like C++ or Java).
            In Python, you can achieve similar functionality using default parameter values or variable-length argument lists.

@@ -130,6 +130,8 @@ Abstraction:
         -> Abstract methods are declared without providing any implementation in the abstract 
            class, and they must be implemented by concrete (non-abstract) subclasses.
 
+    Abstract classes are used to provide a base class for concrete subclasses to inherit from, 
+    while interfaces are used to define a set of methods that a class must implement.
 
 Association:
 
@@ -144,7 +146,6 @@ Association:
            the answer is "No" because there is no inheritance relation here, salary is not the
            employee and employee is not the salary.
 
-    
 
     There are several types of associations, including:
 
